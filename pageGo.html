@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title>5秒后自动跳转</title>
+</head>
+<body>
+	<h1>操作成功</h1>
+	<span id="time">5</span><span>秒后回到主页</span>&nbsp&nbsp&nbsp&nbsp<a href="javascript:void(0)" onclick="back()">返回</a>
+<script type="text/javascript">
+	var num=4;
+	function count () {
+	document.getElementById("time").innerHTML=num;
+	num=num-1;
+	if (num==0) {
+		location.assign("http://www.tuhu.cn/");
+	}	
+	}
+	setInterval("count()",1000)
+	function back(){
+		location.assign("http://www.tuhu.cn/");//window.history.go(-1);
+	}
+	
+</script>
+</body>
+</html>

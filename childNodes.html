@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+</head>
+<body>
+<div>
+  javascript  
+  <p>javascript</p>
+  <div>jQuery</div>
+  <h5>PHP</h5>
+</div>
+<div id="con"><p>javascript</p>
+  <div>jQuery</div>
+  <h5>PHP</h5></div>
+<script type="text/javascript">
+ var a=document.getElementsByTagName("div")[0].childNodes;
+ document.write(a[0].nodeValue+"<br/>")
+ for(var i=0;i<a.length;i++){
+   document.write("div的第"+(i+1)+"个节点是"+a[i].nodeValue+"<br/>")
+   document.write("div的第"+(i+1)+"个节点属性是"+a[i].nodeType+"<br/>")
+}
+   var x=document.getElementById("con");
+  document.write(x.firstChild.nodeName);
+  document.write(x.lastChild.nodeName);    
+ 
+ 
+</script>
+</body>
+</html>

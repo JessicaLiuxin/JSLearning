@@ -1,4 +1,4 @@
-control+alt+F 格式化
+control+alt+F 格式化,sublime里要先选中
 string 表示字符串
 
 【关于对象】
